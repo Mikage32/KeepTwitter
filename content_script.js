@@ -3,7 +3,6 @@ window.addEventListener("load", main, false);
 function main(e) {
     const jsInitCheckTimer = setInterval(jsLoaded, 10); 
     function jsLoaded() {
-        console.log('called')
         var limit = document.querySelectorAll('header > div > div > div > div.css-1dbjc4n.r-1habvwh > div.css-1dbjc4n.r-dnmrzs.r-1vvnge1 > h1 > a > div')[0];
             
         if (!!limit) {
