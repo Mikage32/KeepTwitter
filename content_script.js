@@ -3,6 +3,17 @@ window.addEventListener("load", main, false);
 function main(e) {
     const leftNavTimer = setInterval(leftnav, 10);
     const favTimer     = setInterval(fav, 10);
+    const titleTimer   = setInterval(title, 1000)
+
+    /**
+     * Change title
+     */
+    function title() {
+        const title = document.querySelectorAll('title')[0];
+        if (!!title) {
+            title.innerText = title.innerText.replace('X', 'Twitter');
+        }
+    }
 
     /**
      * Change the fav icon
