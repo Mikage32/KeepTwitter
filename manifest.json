@@ -3,7 +3,8 @@
     "name":             "Keep Twitter",
     "short_name":       "KeepTwitter",
     "version":          "1.0",
-    "content_scripts": [
+    "permissions":      ["favicon"],
+    "content_scripts":  [
         {
         "matches": ["https://twitter.com/*"],
         "js":      ["content_script.js"],
