@@ -2,7 +2,7 @@ window.addEventListener("load", main, false);
 
 function main(e) {
     const leftNavTimer = setInterval(leftnav, 10);
-    const favTimer     = setInterval(fav, 10);
+    const favTimer     = setInterval(fav, 1);
     setInterval(tweetButton, 1000);
     setInterval(title, 1000)
 
