@@ -2,11 +2,11 @@
     "manifest_version": 3,
     "name":             "Keep Twitter",
     "short_name":       "KeepTwitter",
-    "version":          "1.0",
+    "version":          "2.0",
     "permissions":      ["favicon"],
     "content_scripts":  [
         {
-        "matches": ["https://twitter.com/*"],
+        "matches": ["https://twitter.com/*", "https://x.com/*"],
         "js":      ["content_script.js"],
         "run_at": "document_end"
         }
